@@ -4,8 +4,8 @@ services:
   postgres:
     image: postgres:15
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: rootpassword
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: lmbc
     volumes:
       - postgres_data:/var/lib/postgresql/data
