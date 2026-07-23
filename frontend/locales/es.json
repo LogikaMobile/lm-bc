@@ -1,0 +1,72 @@
+{
+  "navbar": {
+    "businessCenter": "| Business Center",
+    "signIn": "Iniciar Sesión",
+    "signOut": "Cerrar Sesión",
+    "account": "Cuenta"
+  },
+  "landing": {
+    "headline": "Un lugar dónde serás escuchado, y tu negocio seguirá creciendo",
+    "description": "Gestiona tus proyectos empresariales, monitorea el rendimiento SLA y conéctate al instante con los expertos de LogikaMobile a través de nuestra plataforma unificada.",
+    "accessPortal": "Acceder al Portal",
+    "readDocs": "Leer Documentación"
+  },
+  "login": {
+    "welcome": "Bienvenido de nuevo",
+    "subtitle": "Ingresa tus credenciales para acceder a tu Business Center.",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "signIn": "Iniciar Sesión",
+    "authenticating": "Autenticando..."
+  },
+  "dashboard": {
+    "tickets": "Tickets de Soporte",
+    "noTicketSelected": "Ningún ticket seleccionado",
+    "noTicketDesc": "Selecciona un ticket de la barra lateral para ver el historial de conversación o agregar una respuesta.",
+    "welcome": "Bienvenido"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "companiesTab": "Empresas",
+    "employeesTab": "Empleados",
+    "createCompany": "Crear Empresa",
+    "companyName": "Nombre de la Empresa",
+    "companyType": "Tipo de Empresa",
+    "supportHours": "Cuota de Horas de Soporte",
+    "submitCompany": "Registrar Empresa",
+    "addEmployee": "Añadir Empleado",
+    "employeeName": "Nombre Completo",
+    "employeeEmail": "Correo Electrónico",
+    "selectCompany": "Seleccione una Empresa",
+    "submitEmployees": "Registrar Empleados",
+    "successCompany": "Empresa registrada exitosamente",
+    "successEmployees": "Empleados registrados exitosamente",
+    "metricsTab": "Métricas",
+    "ticketsTab": "Tickets",
+    "globalMetrics": "Métricas Globales",
+    "totalProjects": "Total de Proyectos",
+    "totalOpenTickets": "Total Tickets Abiertos",
+    "totalClosedTickets": "Total Tickets Cerrados",
+    "companyMetrics": "Métricas por Empresa",
+    "primaryColor": "Color Primario (HEX)",
+    "secondaryColor": "Color Secundario (HEX)",
+    "accentColor": "Color de Acento (HEX)",
+    "logoFile": "Archivo de Logo SVG",
+    "projectsTab": "Proyectos",
+    "createProject": "Crear Proyecto",
+    "projectName": "Nombre del Proyecto",
+    "projectType": "Tipo de Proyecto",
+    "submitProject": "Registrar Proyecto",
+    "successProject": "Proyecto registrado exitosamente"
+  },
+  "ticketModal": {
+    "title": "Crear Nuevo Ticket",
+    "project": "Proyecto",
+    "type": "Tipo",
+    "priority": "Prioridad",
+    "description": "Descripción",
+    "cancel": "Cancelar",
+    "submit": "Crear Ticket",
+    "success": "Ticket creado exitosamente"
+  }
+}

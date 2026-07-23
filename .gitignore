@@ -1,0 +1,29 @@
+# Global
+.DS_Store
+
+# Frontend (Node / Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*
+frontend/*.pem
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+frontend/.vercel/
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Backend (Kotlin / Gradle / Ktor)
+backend/build/
+backend/.gradle/
+backend/.kotlin/
+backend/.env
+backend/out/
+backend/*.iml
+.idea/
+*.iws
+*.class
+*.log

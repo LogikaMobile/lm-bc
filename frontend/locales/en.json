@@ -1,0 +1,72 @@
+{
+  "navbar": {
+    "businessCenter": "| Business Center",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "account": "Account"
+  },
+  "landing": {
+    "headline": "A place where you will be heard, and your business will keep growing",
+    "description": "Manage your enterprise projects, track SLA performance, and connect instantly with LogikaMobile experts through our unified platform.",
+    "accessPortal": "Access Portal",
+    "readDocs": "Read Documentation"
+  },
+  "login": {
+    "welcome": "Welcome Back",
+    "subtitle": "Enter your credentials to access your Business Center.",
+    "email": "Email Address",
+    "password": "Password",
+    "signIn": "Sign In",
+    "authenticating": "Authenticating..."
+  },
+  "dashboard": {
+    "tickets": "Support Tickets",
+    "noTicketSelected": "No Ticket Selected",
+    "noTicketDesc": "Select a ticket from the sidebar to view its conversation history or add a new reply.",
+    "welcome": "Welcome"
+  },
+  "admin": {
+    "title": "Administration Panel",
+    "companiesTab": "Companies",
+    "employeesTab": "Employees",
+    "createCompany": "Create Company",
+    "companyName": "Company Name",
+    "companyType": "Company Type",
+    "supportHours": "Support Hours Quota",
+    "submitCompany": "Register Company",
+    "addEmployee": "Add Employee",
+    "employeeName": "Full Name",
+    "employeeEmail": "Email Address",
+    "selectCompany": "Select a Company",
+    "submitEmployees": "Register Employees in Bulk",
+    "successCompany": "Company registered successfully",
+    "successEmployees": "Employees registered successfully",
+    "metricsTab": "Metrics",
+    "ticketsTab": "Tickets",
+    "globalMetrics": "Global Metrics",
+    "totalProjects": "Total Projects",
+    "totalOpenTickets": "Total Open Tickets",
+    "totalClosedTickets": "Total Closed Tickets",
+    "companyMetrics": "Metrics by Company",
+    "primaryColor": "Primary Color (HEX)",
+    "secondaryColor": "Secondary Color (HEX)",
+    "accentColor": "Accent Color (HEX)",
+    "logoFile": "Logo SVG Filename",
+    "projectsTab": "Projects",
+    "createProject": "Create Project",
+    "projectName": "Project Name",
+    "projectType": "Project Type",
+    "submitProject": "Create Project",
+    "successProject": "Project created successfully"
+  },
+  "ticketModal": {
+    "title": "Create New Ticket",
+    "project": "Project",
+    "type": "Type",
+    "priority": "Priority",
+    "description": "Description",
+    "cancel": "Cancel",
+    "submit": "Create Ticket",
+    "success": "Ticket created successfully"
+  }
+}
