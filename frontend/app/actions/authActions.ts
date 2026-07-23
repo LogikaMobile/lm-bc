@@ -14,6 +14,7 @@ export async function loginAction(prevState: any, formData: FormData) {
     
     return { success: true, data };
   } catch (error) {
+    console.error("Login Error in Server Action:", error);
     return { success: false, error: 'Invalid credentials' };
   }
 }
