@@ -46,6 +46,15 @@ data class CreateProjectRequestDto(
 @Serializable
 data class ToggleCompanyStatusRequestDto(val isActive: Boolean)
 
+@Serializable
+data class AdminCompanyDto(
+    val id: Int,
+    val name: String,
+    val type: String,
+    val supportHoursQuota: Int,
+    val isActive: Boolean
+)
+
 fun Route.adminRoutes(
     createCompanyUseCase: CreateCompanyUseCase,
     createUsersBulkUseCase: CreateUsersBulkUseCase,
@@ -83,7 +92,16 @@ fun Route.adminRoutes(
             get("/companies") {
                 try {
                     val companies = getCompaniesUseCase.execute()
-                    call.respond(HttpStatusCode.OK, companies)
+                    val dtoCompanies = companies.map { 
+                        AdminCompanyDto(
+                            id = it.id,
+                            name = it.name,
+                            type = it.type,
+                            supportHoursQuota = it.supportHoursQuota,
+                            isActive = it.isActive
+                        )
+                    }
+                    call.respond(HttpStatusCode.OK, dtoCompanies)
                 } catch (e: Exception) {
                     call.respond(HttpStatusCode.InternalServerError, mapOf("error" to (e.message ?: "Failed to fetch companies")))
                 }
