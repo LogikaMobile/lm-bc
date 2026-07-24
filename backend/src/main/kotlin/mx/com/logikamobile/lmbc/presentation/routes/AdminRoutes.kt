@@ -37,6 +37,12 @@ data class BulkUserRequestDto(
 )
 
 @Serializable
+data class BulkUserResponseDto(
+    val createdUsersCount: Int,
+    val userIds: List<Int>
+)
+
+@Serializable
 data class CreateProjectRequestDto(
     val name: String,
     val companyId: Int,
@@ -148,7 +154,7 @@ fun Route.adminRoutes(
                     val requestDto = call.receive<List<BulkUserRequestDto>>()
                     val request = requestDto.map { BulkUserRequest(it.name, it.email, it.companyId) }
                     val userIds = createUsersBulkUseCase.execute(request)
-                    call.respond(HttpStatusCode.Created, mapOf("createdUsersCount" to userIds.size, "userIds" to userIds))
+                    call.respond(HttpStatusCode.Created, BulkUserResponseDto(userIds.size, userIds))
                 } catch (e: Exception) {
                     e.printStackTrace()
                     call.respond(HttpStatusCode.BadRequest, mapOf("error" to (e.message ?: "Invalid request")))
