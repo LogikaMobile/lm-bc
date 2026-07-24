@@ -1,6 +1,7 @@
 export class AuthApiService {
   static async login(email: string, passwordRaw: string) {
     const apiUrl = process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8090';
+    console.log("🔥 [AuthApiService] Attempting to fetch from URL:", apiUrl);
     const res = await fetch(`${apiUrl}/api/auth/login`, {
       method: 'POST',
       headers: {
